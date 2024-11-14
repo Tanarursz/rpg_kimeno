@@ -1,0 +1,26 @@
+
+Fő Feladat: RPG Karakterkezelő Program
+
+Leírás: Írj egy programot, amely egy RPG (szerepjáték) karakterekből álló JSON fájlt használ. 
+A program töltse be a karaktereket, majd hozzon létre belőlük Python objektumokat. A karakterek különböző tulajdonságokkal rendelkeznek, 
+mint például név, szint, életerő, támadóerő és védekezés.
+
+Cél: A karakterek használatával tudj szimulálni egy egyszerű harcot.
+
+Lépések:
+
+1. Töltsd be a JSON adatokat:
+   - A JSON fájlt olvasd be, és alakítsd Python adatstruktúrává.
+
+2. Hozz létre egy Character osztályt:
+   - Minden karaktert egy Character osztály reprezentáljon.
+   - Az osztály tartalmazza a következő attribútumokat: név, szint, életerő, támadóerő, védekezés.
+   - Implementálj egy take_damage metódust, amely csökkenti a karakter életerejét egy adott sebzés alapján.
+
+3. Készíts harci logikát:
+   - Írj egy fight függvényt, amely két karakter objektumot vesz be, és kiszámítja a harcot.
+   - A harci logika legyen egyszerű: a támadó karakter támadóerejéből vond ki a védekező karakter védekezését, 
+     majd ezt a sebzést alkalmazd a védekező karakter életerejére a take_damage metódussal.
+
+4. Szimuláld a harcot:
+   - Két karaktert válassz ki a JSON adatbázisból, és szimulálj egy harcot közöttük, amíg valamelyik karakter életereje nullára csökken.

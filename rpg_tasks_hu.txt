@@ -1,0 +1,28 @@
+
+1. További képességek hozzáadása
+   Feladat: Bővítsd a Character osztályt egy új tulajdonsággal, amely a karakter speciális képességeit (skills) tartalmazza. 
+   Minden képesség egy skill_name és egy damage attribútumból áll.
+   Tipp: A JSON fájlban bővítsd a karakterek adatait egy skills mezővel, majd add hozzá az osztályhoz, hogy a skills tulajdonság listaként legyen tárolva.
+   Extra kihívás: Írj egy use_skill metódust, amely kiválaszt egy képességet a listából, és a képesség sebzését alkalmazza a másik karakterre.
+
+2. Tárgyak hozzáadása a karakterekhez
+   Feladat: Bővítsd a karaktereket tárgyakkal (items). Minden tárgy növelheti a karakter életerejét, támadóerejét vagy védekezését.
+   Tipp: A JSON fájlban adj hozzá egy items mezőt, amely egy vagy több tárgy nevét tartalmazza, majd készíts egy külön items dictionary-t, 
+   amely meghatározza minden tárgy bónusz értékeit.
+   Extra kihívás: Implementálj egy apply_items metódust, amely a karakterek attribútumait megnöveli a tárgyak hatásával.
+
+3. Tapasztalati pontok (XP) és szintlépés
+   Feladat: Adj a karakterekhez tapasztalati pontokat (XP). Minden győztes karakter kapjon bizonyos mennyiségű XP-t, és ha elér egy megadott szintet, lépjen szintet.
+   Tipp: Adj egy xp attribútumot a Character osztályhoz, és írj egy level_up metódust, amely növeli a szintet és javítja az értékeket, ha a karakter elég XP-t gyűjtött.
+   Extra kihívás: Állítsd be, hogy minden szintlépés növelje az életerőt, támadást és védekezést.
+
+4. Több karakteres harc
+   Feladat: Készíts egy függvényt, amely képes egyszerre több karakter harcát szimulálni. Két csapat legyen, mindkettő több karakterrel, és a karakterek véletlenszerű sorrendben támadjanak.
+   Tipp: Alakítsd át a fight függvényt, hogy két csapat (team1 és team2) között zajlódjon le a harc.
+   Extra kihívás: A harci sorrend legyen véletlenszerű minden körben, hogy minden karakter bármikor sorra kerülhessen.
+
+5. Karaktermentés és betöltés
+   Feladat: Implementálj mentési és betöltési funkciókat. A játék során a karakterek változó értékei menthetők legyenek JSON fájlba, és bármikor visszatölthetők.
+   Tipp: Írj egy save_character metódust, amely a karakter összes tulajdonságát JSON fájlba menti, majd írj egy load_character függvényt, amely ezt visszatölti, 
+   és új Character objektumot hoz létre.
+   Extra kihívás: Gondoskodj arról, hogy több karakter is menthető legyen egyetlen JSON fájlba, és lehessen választani, melyiket szeretnéd visszatölteni.
